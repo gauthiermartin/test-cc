@@ -38,5 +38,6 @@
         ]
       }
     ]
-  }
+  },
+  "includeCoAuthoredBy": false
 }
