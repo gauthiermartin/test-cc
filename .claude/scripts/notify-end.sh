@@ -1,6 +1,7 @@
 #!/bin/bash
 # ~/.claude/scripts/notify-end.sh
 
+SOUND_NAME="Glass"
 # Read hook Input data from standard input
 INPUT=$(cat)
 # Get current session directory name (hooks run in the same directory as the session)
@@ -23,4 +24,5 @@ else
     MSG="Task completed"
 fi
 # Display macOS notification with sound using osascript
-osascript -e "display notification \"$MSG\" with title \"ClaudeCode ($SESSION_DIR) Task Done\" sound name \"Glass\""
+osascript -e "display notification \"$MSG\" with title \"ClaudeCode ($SESSION_DIR) Task Done\""
+afplay "/System/Library/Sounds/$SOUND_NAME.aiff"
