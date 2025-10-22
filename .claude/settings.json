@@ -25,7 +25,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bash ./.claude/scripts/notify-end.sh"
+            "command": "python3 ./.claude/scripts/notify-end.py"
           }
         ]
       }
